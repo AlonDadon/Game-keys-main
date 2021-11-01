@@ -1,0 +1,247 @@
+.main-game-preview {
+    background-color: #0f1418;
+    // .btn-next,
+    // btn-prev {
+    //     display: none;
+    // }
+    img {
+        display: none;
+    }
+    .m-img img {
+        display: block;
+        box-shadow: 0 0 10px 5px #000;
+    }
+    .m-img {
+        opacity: 0;
+        transition: opacity 300ms;
+        // transition: opacity 11s;
+    }
+    .m-img.transition {
+        opacity: 1;
+    }
+    .imgs-container {
+        img {
+            width: 170px;
+            height: 97px;
+            opacity: 0;
+            transition: opacity 300ms;
+        }
+        img.transition {
+            opacity: 1;
+        }
+    }
+
+    @media screen and (min-width: $lg-breakpoint) {
+        img {
+            display: block;
+        }
+        .imgs-container {
+            width: 21%;
+        }
+    }
+    padding: 2px;
+    position: relative;
+    .preview-container {
+        box-shadow: 0 0 7px 0px #000;
+        flex-direction: row;
+
+        h2 {
+            padding: 3px;
+        }
+        p {
+            padding: 5px;
+        }
+        @media screen and (max-width: 750px) {
+            height: 200px;
+        }
+    }
+    .m-img {
+        width: 200%;
+        min-height: 100%;
+        height: 345px;
+    }
+    .m-img > img {
+        height: 100%;
+        min-height: 100%;
+        @media screen and (max-width: 750px) {
+            height: 190px;
+            // width: 160px;
+        }
+    }
+    img {
+        min-width: 170px;
+        min-height: 97px;
+        // @media screen and (max-width: 750px) {
+        //     height: 190px;
+        //     width: 160px;
+        // }
+    }
+    .preview-price {
+        align-self: flex-end;
+        color: white;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        .in-sale {
+            margin: 0;
+            padding: 0;
+        }
+        .f-price {
+            margin: 0;
+            padding: 0;
+        }
+        .discount {
+            padding: 4px;
+            margin: 0;
+            border-radius: 50%;
+            height: 40px;
+            width: 40px;
+            color: whitesmoke;
+            background: #6ebf00;
+            font-family: "roboto-reg";
+            font-weight: 900;
+            text-align: center;
+        }
+    }
+    .price-container {
+        gap: 0;
+    }
+    .btn-home-buy-now {
+        position: absolute;
+        bottom: 12px;
+        right: 9px;
+        border: none;
+        border-radius: 5px;
+        width: 67px;
+        height: 30px;
+        @media screen and (min-width: 930px) {
+            // right: 9px;
+            width: 100px;
+        }
+    }
+    div {
+        gap: 2px;
+    }
+
+    .discount {
+        margin: 10px 10px;
+        color: #a4d007;
+        background: #4c6b22;
+        display: inline-block;
+        padding: 0 3px;
+        line-height: 34px;
+        padding: 0 5px;
+        font-size: 15px;
+    }
+    .btn {
+        position: absolute;
+        right: -4%;
+        top: 50%;
+        color: $clr4;
+
+        height: 80px;
+        transform: translate(4%, -50%);
+
+        font-size: 3rem;
+        border-radius: 0.1rem;
+        border: unset;
+        background-color: black;
+        font-size: x-large;
+        border-radius: 2.9rem;
+        transition: 0.4s;
+    }
+    .btn-next {
+        position: absolute;
+        right: 0.8%;
+        transform: translate(6%, -50%);
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0) 95%);
+        &:hover {
+            background: linear-gradient(to right, rgba(93, 182, 232, 0.3) 5%, rgba(171, 218, 244, 0) 95%);
+        }
+        &:active {
+            background: linear-gradient(to right, rgba(93, 182, 232, 0.3) 5%, rgba(171, 218, 244, 0) 95%);
+        }
+    }
+    .btn-prev {
+        position: absolute;
+        left: 0;
+        // left: 0;
+        transform: translate(6%, -50%);
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0) 95%);
+        &:hover {
+            background: linear-gradient(to left, rgba(93, 182, 232, 0.3) 5%, rgba(171, 218, 244, 0) 95%);
+        }
+        &:active {
+            background: linear-gradient(to left, rgba(93, 182, 232, 0.3) 5%, rgba(171, 218, 244, 0) 95%);
+        }
+    }
+    h2 {
+        font-size: 16px;
+        margin-inline-start: 5px;
+        margin-bottom: 0;
+    }
+    p {
+        margin-inline-start: 5px;
+        color: $clr8;
+    }
+    .f-price {
+        color: $clr4;
+    }
+
+    @media screen and (max-width: $md-breakpoint) {
+        .btn-next {
+            right: -8%;
+        }
+        .btn-prev {
+            left: -8%;
+        }
+        @media screen and (max-width: $md-breakpoint) {
+            .btn {
+                top: 125%;
+            }
+            .btn-next {
+                right: 5%;
+            }
+            .btn-prev {
+                left: 5%;
+            }
+        }
+    }
+}
+@media screen and (max-width: $md-breakpoint) {
+    .main-game-preview {
+        margin-bottom: 100px;
+        min-height: 200px;
+        .m-img > img {
+            margin-top: 5px;
+            min-height: 180px;
+        }
+    }
+}
+
+.carousel-nav {
+    gap: 2px;
+    display: none;
+    .item {
+        // background-color: #6ed0fc;
+        // width: 15px;
+        // height: 15px;
+        // border-radius: 50%;
+        // border: 3px solid white;
+        margin: 12px 2px;
+        width: 15px;
+        height: 9px;
+        border-radius: 2px;
+        transition: background-color 0.2s;
+        background-color: hsla(202, 60%, 100%, 0.2);
+        cursor: pointer;
+        transition: 0.8s;
+    }
+    .item.active {
+        // background-color: $clr1;
+        background-color: hsla(202, 60%, 100%, 0.4);
+    }
+    @media screen and(min-width:790px) {
+        display: flex;
+    }
+}

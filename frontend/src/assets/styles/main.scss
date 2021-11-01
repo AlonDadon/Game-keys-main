@@ -1,0 +1,46 @@
+// Setup
+@import "setup/variables";
+@import "setup/functions";
+@import "setup/mixins";
+@import "setup/typography";
+
+// // Basics
+@import "basics/helpers";
+// @import "basics/layout";
+@import "basics/base";
+@import "basics/links";
+@import "basics/forms";
+
+//pages
+@import "views/_about.scss"; 
+
+// Components
+@import "cmps/Header";
+@import "cmps/ReviewList";
+@import "cmps/game-preview";
+@import "cmps/game-filter";
+@import "cmps/game-list";
+@import "cmps/loader";
+@import "cmps/small-game-preview";
+@import "cmps/main-game-preview";
+@import "cmps/review-priview";
+@import "cmps/add-review";
+@import "cmps/video-game";
+@import "cmps/video";
+@import "cmps/carousel";
+@import "cmps/util/screen";
+@import "cmps/util/alert";
+@import "cmps/footer";
+@import "cmps/img-modal";
+
+// Views
+@import "views/game-details";
+@import "views/game-cart";
+@import "views/login-signup";
+@import "views/game-app";
+@import "views/user-Profile";
+@import "views/home-page";
+@import "views/game-edit";
+@import "views/user-edit";
+
+

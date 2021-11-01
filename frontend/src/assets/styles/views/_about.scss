@@ -1,0 +1,77 @@
+@keyframes slogenImgiFadeInOut {
+    0% {
+    opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0;
+  }
+  100% {
+  opacity:0;
+  }
+  }
+
+
+.about {
+    padding-top: 65px;
+    color: $clr7;
+    font-size: 12px;
+    .about-info {
+        margin-bottom: 50px;
+        .info-title {
+            margin-inline-end: 80px;
+            max-width: 200px;
+            h1 {
+                font-size: 3rem;
+            }
+        }
+        .info-txt {
+            max-width: 300px;
+        }
+    }
+    .slogen {
+        position: relative;
+        width: 100%;
+        height: 57vh;
+        .slogen-img {
+            position: absolute;
+            left: 0;
+            max-width: 100%;
+            height: 100%;
+            &.top-img{
+                animation-name: slogenImgiFadeInOut;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+                animation-duration: 3s;
+                animation-direction: alternate;
+            }
+        }
+ 
+        .slogen-txt {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5rem;
+        }
+        .test {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            bottom: 0;
+            background-color: #00000066;
+        }
+    }
+    @media screen and (max-width: 750px) {
+        .about-info {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .slogen .slogen-txt {
+            font-size: 2rem;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+// Colors
+$clr0: #0f1418;
+$clr1: #1a2a3d;
+$clr2: #b8b6b4;
+$clr3: #9099a1;
+$clr4: #67c1f5;
+$clr5: #5989b4;
+$clr6: #acdbf5;
+$clr7: #fff;
+$clr8: #8f98a0;
+
+$bgc1: rgba(20, 31, 44, 0.4);
+$bgc2: linear-gradient(to bottom, rgba(42, 71, 94, 1) 5%, rgba(42, 71, 94, 0) 70%);
+$bgc3: linear-gradient(45deg, #396583, transparent);
+$bgc4: linear-gradient(90deg, rgba(62, 103, 150, 0.919) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
+$bgc5: linear-gradient(to bottom, #e8f5fc 5%, #cce9f9 95%);
+$bgc6: rgba(0, 0, 0, 0.5);
+
+// Breakpoints
+$s-breakpoint: 500px;
+$md-breakpoint: 790px;
+$lg-breakpoint: 930px;

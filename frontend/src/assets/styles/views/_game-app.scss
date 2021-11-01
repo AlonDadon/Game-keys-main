@@ -1,0 +1,31 @@
+.main-explorer {
+    .hero {
+        margin-top: 40px;
+        object-position: top;
+        @media screen and(min-width:750px) {
+            height: 85vh;
+            margin-top: 0;
+        }
+    }
+    .poster {
+        height: 59vh;
+        object-position: center;
+    }
+    .sale-title {
+        position: absolute;
+        top: 27%;
+        right: 5%;
+        transform: translate(5%, 50%);
+        font-size: 2.1rem;
+        color: black;
+        font-family: "roboto-medium";
+        text-shadow: 0 0 2px white;
+        background: linear-gradient(95deg, #f8fbdc, transparent);
+        border-radius: 1rem;
+        padding: 4px;
+        span {
+            font-weight: bold;
+            font-size: 3.3rem;
+        }
+    }
+}

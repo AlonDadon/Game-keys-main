@@ -1,0 +1,30 @@
+.add-review {
+    margin-bottom: 80px;
+    display: flex;
+    text-transform: capitalize;
+    .star-svg {
+        height: 2rem;
+    }
+    textarea {
+        border-radius: 5px;
+        resize: none;
+    }
+}
+.review-rating-stars {
+    .star-svg{
+        cursor: pointer;
+    }
+    .star-active {
+        .star-svg {
+            color: $clr4;
+        }
+    }
+}
+.btn-add-review{
+    border:none;
+    width:50px;
+    border-radius: 5px;
+    padding:5px;
+    background-color:#101a26;
+    color:white;
+}

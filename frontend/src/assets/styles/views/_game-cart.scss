@@ -1,0 +1,124 @@
+.cart-container {
+    padding-top: 55px;
+    h2:first-of-type {
+        font-size: 34px;
+    }
+    .triangle-down {
+        position: absolute;
+        z-index: -1;
+        right: 44%;
+        bottom: -6%;
+        transform: translate(0, 50%);
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 20px solid #159dee;
+    }
+    .cart-info {
+        color: #c7d5e0;
+    }
+    .cart-card {
+        flex: 1;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin: 0px 0px 3px 0px;
+        // max-height: 77px;
+        img {
+            width: auto;
+            height: 70px;
+            background-color: #000000;
+        }
+    }
+    .cart-status {
+        margin-bottom: 14px;
+        p {
+            position: relative;
+            color: #ffffff;
+            font-weight: bold;
+            line-height: 29px;
+            background-color: #159dee;
+            padding: 0px 14px;
+            display: inline-block;
+        }
+    }
+    .cart-card:last-child {
+        &:last-child {
+            padding: 16px;
+        }
+    }
+    .card-game img {
+        display: none;
+        @media screen and(min-width:790px) {
+            display: block;
+            width: 308px;
+            height: auto;
+        }
+    }
+    .cart-title {
+        font-size: 2rem;
+    }
+    .btn-container {
+        width: 100%;
+        @media screen and(max-width:425px) {
+            gap: 5px;
+            .btn-med {
+                padding: 0 10px;
+                font-size: 13px;
+            }
+        }
+    }
+    .total-price > div,
+    p {
+        margin: 0;
+    }
+    .tax {
+        border-bottom: 1px solid #405a6b;
+    }
+    .visa {
+        color: #6ca420;
+    }
+    @media screen and (min-width: 750px) {
+        padding-top: 45px;
+    }
+    .friends-modal {
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        font-size: 1.1rem;
+        position: fixed;
+        background-color: #294962;
+        border-radius: 5px;
+        color: white;
+        h4{
+            padding-top: 60px;
+        }
+        a {
+            color: white;
+            cursor: pointer;
+        }
+        .friends-btn{
+            gap:30px;
+            padding-bottom: 15px;
+        }
+        @media screen and (min-width: 750px) {
+            top: 50%;
+            transform: translate(50%, -50%);
+            width: 360px;
+            height: 245px;
+            padding: 10px;
+        }
+
+        button {
+            align-self: center;
+            width: 27%;
+        }
+        p {
+            cursor: pointer;
+            font-size: 1rem;
+            padding: 5px;
+        }
+        p.active {
+            background-color: #28a745;
+        }
+    }
+}

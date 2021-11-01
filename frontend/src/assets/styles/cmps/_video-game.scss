@@ -1,0 +1,40 @@
+.video-container.grid-container {
+    grid-template-columns: repeat(2, minmax(86px, 1fr));
+}
+.video-container .grid-container {
+    gap: 3px;
+}
+.game-video-container {
+    .video {
+        gap: 2px;
+    }
+    display: none;
+    box-shadow: 0 0 1px 0px #03a9f4;
+    padding: 5px;
+    border-radius: 0.6rem;
+    a {
+        color: $clr4;
+        font-size: 1.2rem;
+        width: 100%;
+        display: block;
+        background: $bgc2;
+    }
+    .video-container {
+        background: $bgc3;
+        padding: 5px;
+        border-radius: 0.6rem;
+    }
+    @media screen and(min-width:700px) {
+        display: block;
+    }
+}
+.video-ctg {
+    display:none;
+    @media screen and(min-width:700px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+// .link {
+//     // background: $bgc3;
+// }

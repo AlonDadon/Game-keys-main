@@ -1,0 +1,128 @@
+.game-edit {
+    @media screen and (max-width: 750px) {
+        .game-edit-form {
+            align-items: center;
+            text-align: center;
+        }
+        .form-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .btn-main {
+            width: 70% !important;
+        }
+    }
+    @media screen and (max-width: 450px) {
+        .game-edit-form {
+            align-items: flex-start;
+            text-align: center;
+        }
+        .form-container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .btn-main {
+            width: 100% !important;
+        }
+    }
+    
+    p {
+        margin-bottom: 1rem;
+    }
+    input {
+        min-height: 2rem;
+    }
+    textarea {
+        resize: none;
+    }
+
+    padding-top: 100px;
+    .form-container {
+        width: 100%;
+        gap: 1.5rem;
+
+    }
+    .game-edit-form {
+        background-color: $clr0;
+        padding: 1rem;
+        border-radius: 5px;
+        img {
+            cursor: pointer;
+            border-radius: 25px;
+            border: 1px solid #808891;
+        }
+    }
+    .info-area {
+        flex-wrap: wrap;
+        width: 55%;
+        gap: 1.5rem;
+        .info-text {
+            max-width: 300px;
+            min-width: 250px;
+        }
+        .info-details {
+            max-width: 300px;
+            min-width: 250px;
+        }
+        .edit-tag-list {
+            position: relative;
+            padding: 0.4rem;
+            border: 1px solid #9099a1;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            p {
+                position: absolute;
+                top: -10px;
+                margin: 0;
+                left: 2px;
+                background-color: $clr0;
+                color: white;
+                font-size: 0.7rem;
+                padding: 0 0.5rem;
+            }
+            .btn{
+                font-size: 0.8rem;
+                color: $clr2;
+                &.added{
+                    color: $clr4;
+                }
+
+            }
+        }
+    }
+    .media-area {
+        width: 45%;
+        .images-area {
+            gap: 0.4rem;
+            align-items: flex-end;
+            flex-wrap: wrap;
+        }
+        .img-upload {
+            input {
+                position: absolute;
+                left: -9999px;
+                opacity: 0;
+            }
+        }
+        .img-upload:not(:first-child) {
+            img {
+                max-width: 100px;
+                max-height: 100px;
+                min-width: 75px;
+                min-height: 75px;
+            }
+        }
+
+        .img-upload:first-child {
+            img {
+                max-width: 150px;
+                max-height: 150px;
+                min-width: 100px;
+                min-height: 100px;
+            }
+        }
+    }
+    .btn-main {
+        width: 100px;
+    }
+}

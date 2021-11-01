@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+// @font-face {
+//     font-family: Quantico-Regular;
+//     src: url("../../fonts/Quantico/Quantico-Regular.ttf");
+// }
+
+html {
+    font-family: roboto-reg;
+    line-height: 1.6;
+}
+
+body {
+    font-size: rem(12px);
+    margin: 0;
+    padding: 0;
+    background-color: $clr1;
+    color: $clr5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: roboto-reg;
+    margin-top: 0;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: rem(14px);
+    // text-transform: uppercase;
+    color: #ffff;
+    margin: 0 0 10px;
+    letter-spacing: 0.03em;
+    font-weight: normal;
+    padding-top: 2px;
+}
+
+footer {
+    padding: 5px;
+}
+
+img {
+    width: 100%;
+    @media screen and(min-width:768px) {
+        // object-fit: cover;
+        // object-position: top;
+    }
+}
+
+p {
+    margin: 0 0 0em;
+}
+
+a {
+    text-decoration: none;
+    color: $clr5;
+}
+a:hover {
+    color: $clr4;
+    text-decoration: none;
+}
+.ytp-chrome-top {
+    visibility: hidden;
+}
+.ytp-show-cards-title {
+    visibility: hidden;
+}
+
+

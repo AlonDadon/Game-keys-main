@@ -1,0 +1,340 @@
+.container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 380px;
+    @media screen and (max-width: 530px) {
+        max-width: 95%;
+    }
+    @media screen and (min-width: 530px) {
+        max-width: 86%;
+    }
+    // @media screen and (min-width: 1130px) {
+    //     max-width: 86%;
+    // }
+}
+.txt-center {
+    text-align: center;
+}
+.btn {
+    cursor: pointer;
+}
+.mb-auto {
+    margin-bottom: auto ;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mr-5 {
+    margin-inline-end: 5px;
+}
+.mb-1rem {
+    margin-bottom: 9px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.pt-40{
+    padding-top:40px;
+}
+
+// img
+.s-img {
+    width: 229px;
+    @include aspect-ratio(16, 9);
+}
+// btn
+.btn-big {
+    width: 100%;
+    height: 40px;
+    font-weight: 300;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 40px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 5px;
+    font-family: roboto-medium;
+    background: $clr1;
+    border: 1px solid white;
+    transition: 0.5s;
+    @media screen and (max-width: 550px) {
+        width: 105px;
+        font-size: 12px;
+    }
+}
+.btn-big:hover {
+    background: linear-gradient(114deg, #5b8fa7, transparent), linear-gradient(314deg, #00a2f3, #3f8fb7);
+}
+.btn-big:active {
+    background: linear-gradient(114deg, #5b8fa7, transparent), linear-gradient(314deg, #00a2f3, #3f8fb7);
+}
+// flex helpers
+
+.flex {
+    display: flex;
+
+    > *.full {
+        flex: 1;
+    }
+    &.column {
+        flex-direction: column;
+    }
+    &.justify-center {
+        justify-content: center;
+    }
+    &.align-center {
+        align-items: center;
+    }
+    &.align-start {
+        align-items: flex-start;
+    }
+    &.gap-5 {
+        gap: 5px;
+    }
+    &.gap-10 {
+        gap: 10px;
+    }
+    &.gap-20 {
+        gap: 20px;
+    }
+    &.space-around {
+        justify-content: space-around;
+    }
+    &.space-evenly {
+        justify-content: space-evenly;
+    }
+    &.space-between {
+        justify-content: space-between;
+    }
+}
+
+.align-end {
+    align-self: flex-end;
+}
+.pad-5 {
+    padding: 5px;
+}
+.pad-10 {
+    padding: 10px;
+}
+.pad-15 {
+    padding: 15px;
+}
+.discount {
+    margin: 10px 10px;
+    color: #ffffff;
+    background: #6ebf00;
+    display: inline-block;
+    padding: 0 3px;
+    line-height: 34px;
+    padding: 0 5px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-family: "roboto-reg";
+    font-weight: 900;
+}
+.in-sale {
+    text-decoration: line-through;
+    color: #626366;
+    text-align: center;
+    font-size: rem(11px);
+    margin-bottom: 0;
+}
+
+.dark-txt {
+    color: #556772;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding-right: 10px;
+    min-width: 94px;
+}
+.light-txt {
+    color: $clr4;
+}
+.txt-cap {
+    text-transform: capitalize;
+}
+// Media helpers
+
+.square-ratio {
+    @include aspect-ratio(1, 1);
+}
+.video-ratio {
+    @include aspect-ratio(16, 9);
+}
+.portrait-ratio {
+    @include aspect-ratio(9, 16);
+}
+.hidden {
+    opacity: 0;
+}
+.width-70 {
+    width: 100%;
+    @media screen and(min-width:490px) {
+        width: 70%;
+    }
+}
+
+// logo
+.logo {
+    .img {
+        width: 200px;
+    }
+}
+.logo::first-letter {
+    color: #d2704b;
+}
+
+.btn-med {
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 30px;
+    display: inline-block;
+}
+.btn-cta {
+    // background: linear-gradient(to right, #75b022 5%, #588a1b 95%);
+    color: #fff;
+    background-color: #28a745;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding: 4px 8px;
+    border: none;
+    // color: #d2efa9;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 3px -3px 1px 0px black;
+    max-width: 180px;
+    transition: 0.4s;
+
+    &:hover {
+        color: $clr7;
+    }
+}
+.btn-light {
+    border-radius: 2px;
+    background: rgba(103, 193, 245, 0.2);
+    color: $clr4;
+    cursor: pointer;
+    transition: 0.4s;
+    // &:hover {
+    //     // background: linear-gradient(-60deg, #417a9b 5%, #67c1f5 95%);
+    //     // color: $clr7;
+    //     // background: rgba(103, 193, 245, 0.2);
+    //     // color: $clr4;
+    // }
+}
+.btn-remove {
+    cursor: pointer;
+    text-decoration: underline;
+    color: #56707f;
+    font-size: rem(11px);
+}
+.btn-remove:hover {
+    text-decoration: underline;
+}
+.btn-main {
+    margin: 0px;
+    border: 0px;
+    outline: none;
+    background-color: #28a745;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    position: relative;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    line-height: 15px;
+    padding: 0px 20px;
+    height: 50px;
+    display: flex;
+    width: 100%;
+    min-width: auto;
+    // background-color: rgb(90, 125, 207);
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+    &:hover {
+        background-color: #26ca4b;
+    }
+}
+
+.hero {
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.s-desc {
+    overflow: hidden;
+    max-width: fit-content;
+}
+.desc {
+    max-width: 70ch;
+    line-height: 1.5em;
+    font-size: 14px;
+    color: #acb2b8;
+}
+.title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 10px;
+    letter-spacing: 0.03em;
+}
+
+// css-column
+// .row {
+//     display: flex;
+//     flex-wrap: wrap;
+//     padding: 0 4px;
+//   }
+// /* Create four equal columns that sits next to each other */
+// .column {
+//     flex: 25%;
+//     max-width: 25%;
+//     padding: 0 4px;
+// }
+
+// .column img {
+//     margin-top: 8px;
+//     vertical-align: middle;
+//     width: 100%;
+// }
+
+// /* Responsive layout - makes a two column-layout instead of four columns */
+// @media screen and (max-width: 800px) {
+//     .column {
+//         flex: 50%;
+//         max-width: 50%;
+//     }
+// }
+
+// /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+// @media screen and (max-width: 600px) {
+//     .column {
+//         flex: 100%;
+//         max-width: 100%;
+//     }
+// }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(86px, 1fr));
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+}
+.card-swipe {
+    background-color: black;
+    width: 227px;
+    height: 116px;
+}

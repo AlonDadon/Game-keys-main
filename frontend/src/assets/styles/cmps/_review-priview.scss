@@ -1,0 +1,40 @@
+.review-list {
+    background-color: $clr1;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(86px, 1fr));
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    @media screen and(min-width:345px) {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+    @media screen and(min-width:750px) {
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+    }
+    .review-preview {
+        padding: 12px;
+        background-color: #101a26;
+        border-radius: 5px;
+    }
+    .review-user-preview {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+        gap: 10px;
+        margin-inline-end: 5px;
+        text-transform: capitalize;
+        img {
+            width: 50px;
+            height: 50px;
+            border-radius: 30px;
+        }
+    }
+    .review-txt {
+        max-width: 80ch;
+        color: white;
+    }
+    .review-game-preview {
+        .star-svg {
+            width: 0.8rem;
+        }
+    }
+}

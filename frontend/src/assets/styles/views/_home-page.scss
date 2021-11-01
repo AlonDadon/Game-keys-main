@@ -1,0 +1,67 @@
+// .home-page {
+//     .ctg-list {
+//         display: flex;
+//         gap: 10px;
+//         margin-bottom: 20px;
+//     }
+//     // .home-poster {
+//     // }
+//     .home-game-list.ctg-title {
+//         color: #395a81;
+//         font-size: rem(35px);
+//         .h2 {
+//             color: #395a81;
+//         }
+//     }
+// }
+.ctg-l-title {
+    font-size: 1.9rem;
+    color: rgb(245, 245, 245);
+    text-shadow: 0 0 1px #f8f8ff;
+    line-height: 1.4;
+}
+
+.ctg-s-title {
+    margin: 0;
+    color: rgb(245, 245, 245);
+    font-size: 18px;
+    line-height: 1.4;
+}
+.btn-big {
+    border: 1px solid #5989b4;
+    color: white;
+    transition: 0.4s;
+    &:hover {
+        border: 1px solid white;
+        color: white;
+        background: $clr1;
+    }
+}
+.btn-view {
+    border-color: #17a2b8;
+    color: white;
+    transition: 0.4s;
+}
+.btn-view:hover {
+    color: white;
+    border-color: white;
+}
+.video-container.grid-container {
+    width: 100%;
+}
+.poster {
+    padding: 0 0px 6px 0px;
+    object-position: top;
+    height: 55vh;
+    @media screen and (min-width: 570px) {
+        // height: 60vh;
+        height: 70vh;
+    }
+    @media screen and (min-width: 750px) {
+        height: 79vh;
+        object-fit: cover;
+    }
+    @media screen and (min-width: 830px) {
+        height: 90vh;
+    }
+}

@@ -1,0 +1,90 @@
+.s-preview-container {
+    box-shadow: 0 0 7px 0px #000;
+    flex-direction: row;
+    &.grid-container {
+        grid-template-columns: repeat(4, minmax(65px, 1fr));
+    }
+}
+.small-game-preview {
+    width: 100%;
+    // max-width: 229px;
+    background: linear-gradient(-45deg, rgba(64, 121, 153, 1) 5%, rgba(42, 62, 89, 1) 95%);
+    box-shadow: 0 0 5px #000;
+    @media screen and (max-width: 775px) {
+        .in-sale {
+            padding-inline-end: 6px;
+        }
+    }
+    a {
+        color: $clr4;
+        padding: 2px 7px 2px 7px;
+        background-color: rgba(103, 193, 245, 0.2);
+    }
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    .tag-container {
+        gap: 3px;
+        // border-top: 1px solid #2a3e59;
+        border-top: 1px solid black;
+        text-transform: capitalize;
+    }
+    img {
+        height: 84px;
+    }
+    @media screen and(min-width:720px) {
+        img {
+            height: 118px;
+        }
+    }
+    .preview-price {
+        background: linear-gradient(90deg, #407999 5%, #2a3e59 95%);
+        position: relative;
+        text-align: end;
+        height: 25px;
+        background-color: #436986;
+        padding-bottom: 15px;
+        .in-sale {
+            position: absolute;
+            right: 23%;
+            color: gray;
+            top: 50%;
+            transform: translate(-23%, -50%);
+        }
+        .preview-price {
+            position: relative;
+        }
+        .f-price {
+            position: absolute;
+            right: 3%;
+            top: 50%;
+            transform: translate(-3%, -50%);
+            color: $clr4;
+        }
+        .discount {
+            position: absolute;
+            top: -23px;
+            left: 2%;
+            font-size: rem(18px);
+            padding: 4px;
+            text-align: center;
+            // @media screen and (max-width: 590px){
+            //     line-height:18px;
+            //     top:-13px;
+            // }
+        }
+
+        @media screen and (max-width: 590px) {
+            .discount,
+            .in-sale,
+            .f-price {
+                font-size: 9px;
+            }
+            .discount {
+                line-height: 18px;
+                top: -13px;
+            }
+        }
+    }
+}

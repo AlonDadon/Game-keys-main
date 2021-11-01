@@ -1,0 +1,50 @@
+[
+    {
+        "_id": "u101",
+        "fullname": "Dan Danovich",
+        "imgUrl": "/img/img1.jpg",
+        "isAdmin": false,
+        "username": "dan1",
+        "password": "dandan",
+        "boughtGames": [
+            {
+                "_id": "g140",
+                "title": "Grand Theft Auto: San Andreas",
+                "serialKey": "9s8sa4a2s558fsa",
+                "smallImgUrls": "http//..."
+            }
+        ]
+    },
+    {
+        "_id": "u102",
+        "fullname": "ban banovich",
+        "imgUrl": "/img/img1.jpg",
+        "isAdmin": false,
+        "username": "ban1",
+        "password": "banban",
+        "boughtGames": [
+            {
+                "_id": "g140",
+                "title": "Grand Theft Auto: San Andreas",
+                "serialKey": "9s8sa4a2s558fsa",
+                "smallImgUrls": "http//..."
+            }
+        ]
+    },
+    {
+        "_id": "u103",
+        "fullname": "Ran Ranovich",
+        "imgUrl": "/img/img1.jpg",
+        "isAdmin": false,
+        "username": "ran1",
+        "password": "ranran",
+        "boughtGames": [
+            {
+                "_id": "g140",
+                "title": "Grand Theft Auto: San Andreas",
+                "serialKey": "9s8sa4a2s558fsa",
+                "smallImgUrls": "http//..."
+            }
+        ]
+    }
+]
